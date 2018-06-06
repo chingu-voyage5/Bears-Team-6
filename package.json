@@ -1,5 +1,5 @@
 {
-  "name": "Voyage5",
+  "name": "voyage5",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:chingu-voyage5/Bears-Team-6.git",
@@ -9,12 +9,16 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "npm run start --prefix client",
     "server": "nodemon --cwd server",
-    "start": "node server/index.js"
+    "start": "npm run dev",
+    "postinstall": "subpkg install"
   },
+  "subPackages": [
+    "server",
+    "client"
+  ],
   "dependencies": {
-    "body-parser": "^1.18.3",
     "concurrently": "^3.5.1",
-    "express": "^4.16.3"
+    "subpackage": "^1.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
