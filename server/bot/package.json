@@ -1,0 +1,26 @@
+{
+  "name": "myhubot",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Faxn <blake.curry@gmx.us>",
+  "description": "Test Robot not meant to escape into the wild. If found please press Return.",
+  "dependencies": {
+    "dice-typescript": "^1.4.0",
+    "dotenv": "^6.0.0",
+    "hubot": "^2.19.0",
+    "hubot-diagnostics": "0.0.2",
+    "hubot-discord": "^2.1.0",
+    "hubot-hangupsjs": "0.0.5",
+    "hubot-help": "^0.2.2",
+    "hubot-heroku-keepalive": "^1.0.3",
+    "hubot-maps": "0.0.3",
+    "hubot-redis-brain": "0.0.4",
+    "hubot-rules": "^0.1.2",
+    "hubot-scripts": "^2.17.2",
+    "hubot-shell": "^1.0.2",
+    "hubot-shipit": "^0.2.1"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
