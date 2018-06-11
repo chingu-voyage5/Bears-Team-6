@@ -8,5 +8,9 @@ module.exports = text => {
     .map(word => syllable(word))
     .reduce((accumulator, currentValue) => accumulator + currentValue);
 
-  return { numSentences, words, syllables };
+  return fleshKincaid({
+    sentence: numSentences,
+    word: words.length,
+    syllable: syllables,
+  });
 };
