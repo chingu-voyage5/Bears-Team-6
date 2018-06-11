@@ -11,8 +11,8 @@ app.get('/test', (req, res) => res.send('Hello from the server.'));
 
 app.post('/api/readability', (req, res) => {
   const { text } = req.body;
-  const gradeLevel = readability(text);
-  res.send({ ...gradeLevel });
+  const gradeLevel = readability(text).toFixed(2);
+  res.send({ gradeLevel });
 });
 
 const PORT = process.env.PORT || 8080;
