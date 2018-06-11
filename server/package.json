@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "flesch-kincaid": "^1.0.2",
+    "syllable": "^3.0.0"
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
