@@ -1,0 +1,25 @@
+{
+  "name": "voyage5_bears6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:chingu-voyage5/Bears-Team-6.git",
+  "author": "Aaron <aaronmassey45@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm run start --prefix client",
+    "server": "nodemon --cwd server",
+    "start": "npm start --prefix server",
+    "postinstall": "npm install --prefix client; npm install --prefix server"
+  },
+  "subPackages": [
+    "server",
+    "client"
+  ],
+  "dependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}

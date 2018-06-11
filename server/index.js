@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 
-app.get('/test', (req, res) => res.send('Got it'));
+app.get('/test', (req, res) => res.send('Hello from the server.'));
 
 const PORT = process.env.PORT || 8080;
 

@@ -1,15 +1,12 @@
 {
-  "name": "Voyage5",
+  "name": "server",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:chingu-voyage5/Bears-Team-6.git",
   "author": "Aaron <aaronmassey45@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon server/index.js",
-    "start": "node server/index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
