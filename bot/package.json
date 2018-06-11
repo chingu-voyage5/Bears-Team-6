@@ -21,10 +21,7 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "dev": "nodemon run-bots.js",
     "start": "node run-bots.js"
   },
-  "devDependencies": {
-    "nodemon": "^1.17.5"
-  }
+  "devDependencies": {}
 }

@@ -13,10 +13,11 @@ for (const adapter of adapters){
     if (adapter == "") continue;
     bots[adapter] = child_process.spawn('hubot', ['--disable-httpd', '--adapter', adapter]);
     bots[adapter].stdout.on('data', function(chunk){
-        process.stdin.write(adapter +" Bot: "+ chunk.toString());
+        process.stdout.write(adapter +": "+ chunk.toString());
     });
     bots[adapter].stderr.on('data', function(chunk){
-        process.stderr.write(adapter +" Bot: "+ chunk.toString());
+        console.log('Error' + adapter)
+        process.stderr.write(adapter +": "+ chunk.toString());
     });
 }
 
