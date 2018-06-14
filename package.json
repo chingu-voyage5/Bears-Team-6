@@ -15,8 +15,10 @@
     "server",
     "client"
   ],
+  "dependencies": {
+    "concurrently": "^3.5.1"
+  },
   "devDependencies": {
-    "concurrently": "^3.5.1",
     "nodemon": "^1.17.5"
   }
 }
