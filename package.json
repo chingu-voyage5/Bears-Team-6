@@ -11,7 +11,8 @@
     "server": "nodemon --cwd server",
     "bot": "npm start --prefix bot",
     "start": "concurrently \"npm start --prefix server\" \"npm start --prefix bot\" -n \"server,bot\"",
-    "postinstall": "npm install --prefix client; npm install --prefix server; npm install --prefix bot"
+    "postinstall": "npm install --prefix client; npm install --prefix server; npm install --prefix bot",
+    "test": "echo \"There are no tests yet.\""
   },
   "subPackages": [
     "server",

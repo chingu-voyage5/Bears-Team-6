@@ -6,3 +6,5 @@ install:
 cache:
   directories:
   - "$HOME/.npm"
+test:
+  - npm test
