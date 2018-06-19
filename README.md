@@ -1,3 +1,5 @@
+[![Deveopment Build Status](https://travis-ci.org/chingu-voyage5/Bears-Team-6.svg?branch=development)]
+
 # Bears-Team-6
 
 Bot that analyzes reading level.
