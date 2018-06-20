@@ -6,10 +6,13 @@
   "author": "Aaron <aaronmassey45@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run bot\" -n \"server,client,bot\"",
     "client": "npm run start --prefix client",
     "server": "nodemon --cwd server",
-    "start": "npm start --prefix server"
+    "bot": "npm start --prefix bot",
+    "start": "concurrently \"npm start --prefix server\" \"npm start --prefix bot\" -n \"server,bot\"",
+    "postinstall": "npm install --prefix client; npm install --prefix server; npm install --prefix bot",
+    "test": "echo \"There are no tests yet.\""
   },
   "subPackages": [
     "server",
