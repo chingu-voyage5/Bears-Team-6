@@ -440,6 +440,10 @@ fill-range@^4.0.0:
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
 
+flesch@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/flesch/-/flesch-1.0.2.tgz#3bff0c5d1fa1cf6d61a825fe5ab747444ac8f772"
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"

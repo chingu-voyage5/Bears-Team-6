@@ -1,5 +1,5 @@
 const syllable = require('syllable');
-const fleshKincaid = require('flesch-kincaid');
+const flesch = require('flesch');
 
 module.exports = text => {
   const numSentences = text.split('.').length;
@@ -8,7 +8,7 @@ module.exports = text => {
     .map(word => syllable(word))
     .reduce((accumulator, currentValue) => accumulator + currentValue);
 
-  return fleshKincaid({
+  return flesch({
     sentence: numSentences,
     word: words.length,
     syllable: syllables,
