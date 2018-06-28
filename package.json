@@ -24,5 +24,11 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
-  }
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "bot/node_modules",
+    "client/node_modules",
+    "server/node_modules"
+  ]
 }
