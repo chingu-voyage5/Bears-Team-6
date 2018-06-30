@@ -12,6 +12,7 @@
     "bot": "npm start --prefix bot",
     "start": "concurrently \"npm start --prefix server\" \"npm start --prefix bot\" -n \"server,bot\"",
     "postinstall": "npm install --prefix client; npm install --prefix server; npm install --prefix bot",
+    "heroku-postbuild":"npm run build --prefix client", 
     "test": "echo \"There are no tests yet.\""
   },
   "subPackages": [
@@ -24,5 +25,11 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
-  }
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "bot/node_modules",
+    "client/node_modules",
+    "server/node_modules"
+  ]
 }
