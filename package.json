@@ -20,7 +20,8 @@
     "client"
   ],
   "dependencies": {
-    "concurrently": "^3.5.1"
+    "concurrently": "^3.5.1",
+    "flesch": "^1.0.2"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
