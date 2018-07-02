@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class App extends Component {
   state = {
-    response : ''
+    gradeLevel: '',
+    text:
+      'I will build a great, great wall on our southern border and I will have Mexico pay for that wall.',
   };
-  
+
   componentDidMount() {
-    fetch('/test')
-    .then(res => {
-      res.text()
-      .then(text => this.setState({ response: text }))
-      .catch(err => console.log(err));
-    })
-    .catch(err => console.log(err));
+    axios
+      .post('/api/readability', {
+        text: this.state.text,
+      })
+      .then(res => this.setState({ ...res.data }));
   }
 
   render() {
     return (
       <div className="App">
         <h1>Basic Setup</h1>
-        <h2>Server Says:</h2>
-        <div style={{"border":"2px solid pink"}}>
-          { this.state.response }
-        </div>
+        <h3>
+          The grade level of "{this.state.text}" is: {this.state.gradeLevel}
+        </h3>
       </div>
     );
   }
